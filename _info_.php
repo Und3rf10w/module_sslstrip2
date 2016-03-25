@@ -11,7 +11,7 @@ $mod_panel="show";
 $mod_isup="ps aux|grep -E 'fruitywifi.+sslstrip2.+sslstrip' | grep -v grep | awk '{print $2}'";
 $mod_alias="SSLstrip2";
 # EXEC
-$bin_danger = "/usr/share/fruitywifi/bin/danger";
+$bin_danger = "/usr/bin/sudo";
 $bin_sslstrip = "$mod_path/includes/sslstrip";
 $bin_python = "/usr/bin/python";
 $bin_rm = "/bin/rm";

@@ -41,7 +41,7 @@ if ($type == "inject") {
 
     if ($newdata != "") { $newdata = ereg_replace(13,  "", $newdata);
         $exec = "/bin/echo '$newdata' > $mod_path/includes/inject.txt";
-        exec("/usr/share/FruityWifi/bin/danger \"" . $exec . "\"", $output);
+        exec("/usr/bin/sudo -c \"$exec\"", $output);
     }
 
     $exec = "cat $mod_path/includes/inject.txt";
